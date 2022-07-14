@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2A07AC75287DBCE000860C2C /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC74287DBCE000860C2C /* AppPreferences.swift */; };
 		2A07AC7928802A5B00860C2C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC7828802A5B00860C2C /* NetworkManager.swift */; };
+		2A07AC7B288064AF00860C2C /* CurrencyEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC7A288064AF00860C2C /* CurrencyEx.swift */; };
+		2A07AC81288066E700860C2C /* EditCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC80288066E700860C2C /* EditCashView.swift */; };
 		2A7AAD52287D9032002E6867 /* HoldyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD51287D9032002E6867 /* HoldyApp.swift */; };
 		2A7AAD5B287D9032002E6867 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD5A287D9032002E6867 /* Persistence.swift */; };
 		2A7AAD5E287D9032002E6867 /* Holdy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD5C287D9032002E6867 /* Holdy.xcdatamodeld */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		2A07AC74287DBCE000860C2C /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
 		2A07AC7828802A5B00860C2C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2A07AC7A288064AF00860C2C /* CurrencyEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyEx.swift; sourceTree = "<group>"; };
+		2A07AC80288066E700860C2C /* EditCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCashView.swift; sourceTree = "<group>"; };
 		2A7AAD4E287D9032002E6867 /* Holdy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holdy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7AAD51287D9032002E6867 /* HoldyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldyApp.swift; sourceTree = "<group>"; };
 		2A7AAD5A287D9032002E6867 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -60,6 +64,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A07AC7C288064F900860C2C /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AAD75287D911C002E6867 /* WalletView.swift */,
+				2A7AAD69287D911C002E6867 /* CashListItem.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		2A07AC7D2880650900860C2C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2A07AC842880676200860C2C /* AddCash */,
+				2A07AC832880674A00860C2C /* AddDebt */,
+				2A07AC822880673500860C2C /* AddBankAccount */,
+				2A07AC7F2880669300860C2C /* EditCash */,
+				2A07AC7C288064F900860C2C /* MainScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2A07AC7E288065A000860C2C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2A07AC7828802A5B00860C2C /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2A07AC7F2880669300860C2C /* EditCash */ = {
+			isa = PBXGroup;
+			children = (
+				2A07AC80288066E700860C2C /* EditCashView.swift */,
+			);
+			path = EditCash;
+			sourceTree = "<group>";
+		};
+		2A07AC822880673500860C2C /* AddBankAccount */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddBankAccount;
+			sourceTree = "<group>";
+		};
+		2A07AC832880674A00860C2C /* AddDebt */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddDebt;
+			sourceTree = "<group>";
+		};
+		2A07AC842880676200860C2C /* AddCash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddCash;
+			sourceTree = "<group>";
+		};
 		2A7AAD45287D9032002E6867 = {
 			isa = PBXGroup;
 			children = (
@@ -81,43 +143,43 @@
 			children = (
 				2A7AAD5C287D9032002E6867 /* Holdy.xcdatamodeld */,
 				2A7AAD51287D9032002E6867 /* HoldyApp.swift */,
-				2A7AAD75287D911C002E6867 /* WalletView.swift */,
-				2A7AAD69287D911C002E6867 /* CashListItem.swift */,
-				2A07AC7828802A5B00860C2C /* NetworkManager.swift */,
-				2A07AC74287DBCE000860C2C /* AppPreferences.swift */,
-				2A7AAD91287D9589002E6867 /* Preview Content */,
-				2A7AAD70287D911C002E6867 /* ButtomViews */,
+				2A07AC7D2880650900860C2C /* Screens */,
+				2A07AC7E288065A000860C2C /* Services */,
+				2A7AAD70287D911C002E6867 /* ButtonViews */,
 				2A7AAD76287D911C002E6867 /* ImageView */,
 				2A7AAD6D287D911C002E6867 /* Model */,
 				2A7AAD8D287D925A002E6867 /* CoreData */,
-				2A7AAD6B287D911C002E6867 /* Theme */,
+				2A7AAD6B287D911C002E6867 /*  AppPreferences */,
 				2A7AAD92287D961B002E6867 /* Assets.xcassets */,
+				2A7AAD91287D9589002E6867 /* Preview Content */,
 			);
 			path = Holdy;
 			sourceTree = "<group>";
 		};
-		2A7AAD6B287D911C002E6867 /* Theme */ = {
+		2A7AAD6B287D911C002E6867 /*  AppPreferences */ = {
 			isa = PBXGroup;
 			children = (
+				2A07AC74287DBCE000860C2C /* AppPreferences.swift */,
 				2A7AAD6C287D911C002E6867 /* ColorExtension.swift */,
 			);
-			path = Theme;
+			path = " AppPreferences";
 			sourceTree = "<group>";
 		};
 		2A7AAD6D287D911C002E6867 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				2A7AAD6E287D911C002E6867 /* CashModel.swift */,
+				2A07AC7A288064AF00860C2C /* CurrencyEx.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		2A7AAD70287D911C002E6867 /* ButtomViews */ = {
+		2A7AAD70287D911C002E6867 /* ButtonViews */ = {
 			isa = PBXGroup;
 			children = (
 				2A7AAD71287D911C002E6867 /* AddButtonView.swift */,
 			);
-			path = ButtomViews;
+			path = ButtonViews;
 			sourceTree = "<group>";
 		};
 		2A7AAD76287D911C002E6867 /* ImageView */ = {
@@ -227,8 +289,10 @@
 				2A07AC75287DBCE000860C2C /* AppPreferences.swift in Sources */,
 				2A7AAD5B287D9032002E6867 /* Persistence.swift in Sources */,
 				2A7AAD85287D911C002E6867 /* WalletView.swift in Sources */,
+				2A07AC7B288064AF00860C2C /* CurrencyEx.swift in Sources */,
 				2A7AAD83287D911C002E6867 /* ContentView.swift in Sources */,
 				2A07AC7928802A5B00860C2C /* NetworkManager.swift in Sources */,
+				2A07AC81288066E700860C2C /* EditCashView.swift in Sources */,
 				2A7AAD80287D911C002E6867 /* CashModel.swift in Sources */,
 				2A7AAD89287D911C002E6867 /* DebtsImageView.swift in Sources */,
 				2A7AAD5E287D9032002E6867 /* Holdy.xcdatamodeld in Sources */,
