@@ -11,6 +11,8 @@
 		2A07AC7928802A5B00860C2C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC7828802A5B00860C2C /* NetworkManager.swift */; };
 		2A07AC7B288064AF00860C2C /* CurrencyEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC7A288064AF00860C2C /* CurrencyEx.swift */; };
 		2A07AC81288066E700860C2C /* EditCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC80288066E700860C2C /* EditCashView.swift */; };
+		2A3B843D2880AFE500E81D2A /* EditCashListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B843C2880AFE500E81D2A /* EditCashListItem.swift */; };
+		2A3B843F2880BA7E00E81D2A /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B843E2880BA7E00E81D2A /* DeleteButton.swift */; };
 		2A7AAD52287D9032002E6867 /* HoldyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD51287D9032002E6867 /* HoldyApp.swift */; };
 		2A7AAD5B287D9032002E6867 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD5A287D9032002E6867 /* Persistence.swift */; };
 		2A7AAD5E287D9032002E6867 /* Holdy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD5C287D9032002E6867 /* Holdy.xcdatamodeld */; };
@@ -34,6 +36,8 @@
 		2A07AC7828802A5B00860C2C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2A07AC7A288064AF00860C2C /* CurrencyEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyEx.swift; sourceTree = "<group>"; };
 		2A07AC80288066E700860C2C /* EditCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCashView.swift; sourceTree = "<group>"; };
+		2A3B843C2880AFE500E81D2A /* EditCashListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCashListItem.swift; sourceTree = "<group>"; };
+		2A3B843E2880BA7E00E81D2A /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		2A7AAD4E287D9032002E6867 /* Holdy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holdy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7AAD51287D9032002E6867 /* HoldyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldyApp.swift; sourceTree = "<group>"; };
 		2A7AAD5A287D9032002E6867 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				2A07AC80288066E700860C2C /* EditCashView.swift */,
+				2A3B843E2880BA7E00E81D2A /* DeleteButton.swift */,
+				2A3B843C2880AFE500E81D2A /* EditCashListItem.swift */,
 			);
 			path = EditCash;
 			sourceTree = "<group>";
@@ -293,10 +299,12 @@
 				2A7AAD83287D911C002E6867 /* ContentView.swift in Sources */,
 				2A07AC7928802A5B00860C2C /* NetworkManager.swift in Sources */,
 				2A07AC81288066E700860C2C /* EditCashView.swift in Sources */,
+				2A3B843F2880BA7E00E81D2A /* DeleteButton.swift in Sources */,
 				2A7AAD80287D911C002E6867 /* CashModel.swift in Sources */,
 				2A7AAD89287D911C002E6867 /* DebtsImageView.swift in Sources */,
 				2A7AAD5E287D9032002E6867 /* Holdy.xcdatamodeld in Sources */,
 				2A7AAD87287D911C002E6867 /* CashImageView.swift in Sources */,
+				2A3B843D2880AFE500E81D2A /* EditCashListItem.swift in Sources */,
 				2A7AAD88287D911C002E6867 /* SavingsImageView.swift in Sources */,
 				2A7AAD52287D9032002E6867 /* HoldyApp.swift in Sources */,
 				2A7AAD7F287D911C002E6867 /* ColorExtension.swift in Sources */,

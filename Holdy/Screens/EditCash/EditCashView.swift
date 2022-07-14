@@ -8,28 +8,25 @@
 import SwiftUI
 
 struct EditCashView: View {
+    
+    
     var body: some View {
-        
         
         ZStack{
             Color.secondarySystemBackground
                 .ignoresSafeArea()
             
             VStack{
-                HStack(alignment: .firstTextBaseline){
-                    Button("Cancel"){
-                        
-                    }
+                HStack(){
                     Spacer()
-                    Text("Edit cash")
-                        .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 17)))
-                        .foregroundColor(Color.label)
-                        .bold()
-                    
-                    Spacer()
-                    Button("Save"){
-                        
+                    Button {
+                        // Action (save the new data)
+                    } label: {
+                        Text("Save")
+                            .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 17)))
+                            .bold()
                     }
+                
                 }
                 .padding(EdgeInsets(top: 10,
                                     leading: 0,
@@ -39,17 +36,20 @@ struct EditCashView: View {
                 VStack(spacing: 8){
                     HStack{
                         Text("Balance")
+                            .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 17)))
+                            .bold()
                         Spacer()
                     }
                     .padding(.top)
                     
-                    
+                    EditCashListItem(exchange: "GEL", cash: 2746.76, flag: "GE", isChoose: false, cashTextValue: .constant("1345"))
                     
                 }
                 
                     
                 
                 Spacer()
+                DeleteButton()
             }
             .padding()
             
