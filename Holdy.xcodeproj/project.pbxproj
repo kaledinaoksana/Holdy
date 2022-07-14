@@ -7,22 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A07AC75287DBCE000860C2C /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC74287DBCE000860C2C /* AppPreferences.swift */; };
+		2A07AC7928802A5B00860C2C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC7828802A5B00860C2C /* NetworkManager.swift */; };
 		2A7AAD52287D9032002E6867 /* HoldyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD51287D9032002E6867 /* HoldyApp.swift */; };
-		2A7AAD54287D9032002E6867 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD53287D9032002E6867 /* ContentView.swift */; };
-		2A7AAD56287D9032002E6867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AAD55287D9032002E6867 /* Assets.xcassets */; };
-		2A7AAD59287D9032002E6867 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AAD58287D9032002E6867 /* Preview Assets.xcassets */; };
 		2A7AAD5B287D9032002E6867 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD5A287D9032002E6867 /* Persistence.swift */; };
 		2A7AAD5E287D9032002E6867 /* Holdy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD5C287D9032002E6867 /* Holdy.xcdatamodeld */; };
+		2A7AAD66287D905A002E6867 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2A7AAD65287D905A002E6867 /* Alamofire */; };
+		2A7AAD7D287D911C002E6867 /* CashListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD69287D911C002E6867 /* CashListItem.swift */; };
+		2A7AAD7F287D911C002E6867 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD6C287D911C002E6867 /* ColorExtension.swift */; };
+		2A7AAD80287D911C002E6867 /* CashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD6E287D911C002E6867 /* CashModel.swift */; };
+		2A7AAD82287D911C002E6867 /* AddButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD71287D911C002E6867 /* AddButtonView.swift */; };
+		2A7AAD83287D911C002E6867 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD72287D911C002E6867 /* ContentView.swift */; };
+		2A7AAD85287D911C002E6867 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD75287D911C002E6867 /* WalletView.swift */; };
+		2A7AAD86287D911C002E6867 /* CustomShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD77287D911C002E6867 /* CustomShapes.swift */; };
+		2A7AAD87287D911C002E6867 /* CashImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD78287D911C002E6867 /* CashImageView.swift */; };
+		2A7AAD88287D911C002E6867 /* SavingsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD79287D911C002E6867 /* SavingsImageView.swift */; };
+		2A7AAD89287D911C002E6867 /* DebtsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD7A287D911C002E6867 /* DebtsImageView.swift */; };
+		2A7AAD90287D9584002E6867 /* Preview Content.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AAD8F287D9584002E6867 /* Preview Content.xcassets */; };
+		2A7AAD93287D961B002E6867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AAD92287D961B002E6867 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A07AC74287DBCE000860C2C /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		2A07AC7828802A5B00860C2C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2A7AAD4E287D9032002E6867 /* Holdy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holdy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7AAD51287D9032002E6867 /* HoldyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldyApp.swift; sourceTree = "<group>"; };
-		2A7AAD53287D9032002E6867 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2A7AAD55287D9032002E6867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2A7AAD58287D9032002E6867 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A7AAD5A287D9032002E6867 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2A7AAD5D287D9032002E6867 /* Holdy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Holdy.xcdatamodel; sourceTree = "<group>"; };
+		2A7AAD69287D911C002E6867 /* CashListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashListItem.swift; sourceTree = "<group>"; };
+		2A7AAD6C287D911C002E6867 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		2A7AAD6E287D911C002E6867 /* CashModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashModel.swift; sourceTree = "<group>"; };
+		2A7AAD71287D911C002E6867 /* AddButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButtonView.swift; sourceTree = "<group>"; };
+		2A7AAD72287D911C002E6867 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A7AAD75287D911C002E6867 /* WalletView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		2A7AAD77287D911C002E6867 /* CustomShapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomShapes.swift; sourceTree = "<group>"; };
+		2A7AAD78287D911C002E6867 /* CashImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashImageView.swift; sourceTree = "<group>"; };
+		2A7AAD79287D911C002E6867 /* SavingsImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsImageView.swift; sourceTree = "<group>"; };
+		2A7AAD7A287D911C002E6867 /* DebtsImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtsImageView.swift; sourceTree = "<group>"; };
+		2A7AAD8F287D9584002E6867 /* Preview Content.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Content.xcassets"; sourceTree = "<group>"; };
+		2A7AAD92287D961B002E6867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7AAD66287D905A002E6867 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,20 +79,71 @@
 		2A7AAD50287D9032002E6867 /* Holdy */ = {
 			isa = PBXGroup;
 			children = (
-				2A7AAD51287D9032002E6867 /* HoldyApp.swift */,
-				2A7AAD53287D9032002E6867 /* ContentView.swift */,
-				2A7AAD55287D9032002E6867 /* Assets.xcassets */,
-				2A7AAD5A287D9032002E6867 /* Persistence.swift */,
 				2A7AAD5C287D9032002E6867 /* Holdy.xcdatamodeld */,
-				2A7AAD57287D9032002E6867 /* Preview Content */,
+				2A7AAD51287D9032002E6867 /* HoldyApp.swift */,
+				2A7AAD75287D911C002E6867 /* WalletView.swift */,
+				2A7AAD69287D911C002E6867 /* CashListItem.swift */,
+				2A07AC7828802A5B00860C2C /* NetworkManager.swift */,
+				2A07AC74287DBCE000860C2C /* AppPreferences.swift */,
+				2A7AAD91287D9589002E6867 /* Preview Content */,
+				2A7AAD70287D911C002E6867 /* ButtomViews */,
+				2A7AAD76287D911C002E6867 /* ImageView */,
+				2A7AAD6D287D911C002E6867 /* Model */,
+				2A7AAD8D287D925A002E6867 /* CoreData */,
+				2A7AAD6B287D911C002E6867 /* Theme */,
+				2A7AAD92287D961B002E6867 /* Assets.xcassets */,
 			);
 			path = Holdy;
 			sourceTree = "<group>";
 		};
-		2A7AAD57287D9032002E6867 /* Preview Content */ = {
+		2A7AAD6B287D911C002E6867 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				2A7AAD58287D9032002E6867 /* Preview Assets.xcassets */,
+				2A7AAD6C287D911C002E6867 /* ColorExtension.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		2A7AAD6D287D911C002E6867 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AAD6E287D911C002E6867 /* CashModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7AAD70287D911C002E6867 /* ButtomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AAD71287D911C002E6867 /* AddButtonView.swift */,
+			);
+			path = ButtomViews;
+			sourceTree = "<group>";
+		};
+		2A7AAD76287D911C002E6867 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AAD77287D911C002E6867 /* CustomShapes.swift */,
+				2A7AAD78287D911C002E6867 /* CashImageView.swift */,
+				2A7AAD79287D911C002E6867 /* SavingsImageView.swift */,
+				2A7AAD7A287D911C002E6867 /* DebtsImageView.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		2A7AAD8D287D925A002E6867 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AAD5A287D9032002E6867 /* Persistence.swift */,
+				2A7AAD72287D911C002E6867 /* ContentView.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2A7AAD91287D9589002E6867 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AAD8F287D9584002E6867 /* Preview Content.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -89,6 +164,9 @@
 			dependencies = (
 			);
 			name = Holdy;
+			packageProductDependencies = (
+				2A7AAD65287D905A002E6867 /* Alamofire */,
+			);
 			productName = Holdy;
 			productReference = 2A7AAD4E287D9032002E6867 /* Holdy.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +195,9 @@
 				Base,
 			);
 			mainGroup = 2A7AAD45287D9032002E6867;
+			packageReferences = (
+				2A7AAD64287D905A002E6867 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 2A7AAD4F287D9032002E6867 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -131,8 +212,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7AAD59287D9032002E6867 /* Preview Assets.xcassets in Resources */,
-				2A7AAD56287D9032002E6867 /* Assets.xcassets in Resources */,
+				2A7AAD93287D961B002E6867 /* Assets.xcassets in Resources */,
+				2A7AAD90287D9584002E6867 /* Preview Content.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +224,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A07AC75287DBCE000860C2C /* AppPreferences.swift in Sources */,
 				2A7AAD5B287D9032002E6867 /* Persistence.swift in Sources */,
-				2A7AAD54287D9032002E6867 /* ContentView.swift in Sources */,
+				2A7AAD85287D911C002E6867 /* WalletView.swift in Sources */,
+				2A7AAD83287D911C002E6867 /* ContentView.swift in Sources */,
+				2A07AC7928802A5B00860C2C /* NetworkManager.swift in Sources */,
+				2A7AAD80287D911C002E6867 /* CashModel.swift in Sources */,
+				2A7AAD89287D911C002E6867 /* DebtsImageView.swift in Sources */,
 				2A7AAD5E287D9032002E6867 /* Holdy.xcdatamodeld in Sources */,
+				2A7AAD87287D911C002E6867 /* CashImageView.swift in Sources */,
+				2A7AAD88287D911C002E6867 /* SavingsImageView.swift in Sources */,
 				2A7AAD52287D9032002E6867 /* HoldyApp.swift in Sources */,
+				2A7AAD7F287D911C002E6867 /* ColorExtension.swift in Sources */,
+				2A7AAD82287D911C002E6867 /* AddButtonView.swift in Sources */,
+				2A7AAD86287D911C002E6867 /* CustomShapes.swift in Sources */,
+				2A7AAD7D287D911C002E6867 /* CashListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +280,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -249,6 +342,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -349,6 +443,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A7AAD64287D905A002E6867 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A7AAD65287D905A002E6867 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A7AAD64287D905A002E6867 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2A7AAD5C287D9032002E6867 /* Holdy.xcdatamodeld */ = {
