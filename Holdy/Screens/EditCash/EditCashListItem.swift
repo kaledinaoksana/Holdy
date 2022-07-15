@@ -10,57 +10,80 @@ import SwiftUI
 struct EditCashListItem: View {
     
     let exchange: String
-    var cash: Double
     let flag: String
-    let isChoose: Bool
-    @Binding var cashTextValue: String
+    
+    //@Binding var cashTextValue: String
+    
+    @Binding var newCash: Double
+    @State var cashTextValue: String
+    
+    @State var isChoose = false
+    @State private var showAlert = false
     
     var body: some View {
        
-        ZStack{
-            ZStack{
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(Color.tertiarySystemBackground)
-                    .frame(height: 52)
-                    .overlay(isChoose ? RoundedRectangle(cornerRadius: 12)
-                                .stroke(Color.systemFill, lineWidth: 1) : nil)
-                
-                
-                HStack( spacing: 12){
-                    Image(flag)
-                        .resizable()
-                        .frame(width: 21.0/15*24, height: 15.0/15*24)
-                        .clipShape(Circle())
-                    
-                    Text(exchange)
-                        .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 20)))
-                        .fontWeight(.medium)
-                        .foregroundColor(.label)
-                    
-                    Spacer()
-                    
-                    TextField("", text: $cashTextValue) { _ in
-                        
-                    }
-                    .font(Font.headline.weight(isChoose ? .bold : .medium))
-                    .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 20)))
-                    .frame(alignment: .trailing)
-                    .multilineTextAlignment(.trailing)
-                    .keyboardType(.decimalPad)
-                        
-                }
-                .padding()
-            }
-            
-        }
-        .ignoresSafeArea()
        
+            ZStack{
+                ZStack{
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.tertiarySystemBackground)
+                        .frame(height: 52)
+                        .overlay(isChoose ? RoundedRectangle(cornerRadius: 12)
+                                    .stroke(Color.systemFill, lineWidth: 1) : nil)
+                    
+                    HStack( spacing: 12){
+                        Image(flag)
+                            .resizable()
+                            .frame(width: 21.0/15*24, height: 15.0/15*24)
+                            .clipShape(Circle())
+                        
+                        Text(exchange)
+                            .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 20)))
+                            .fontWeight(.medium)
+                            .foregroundColor(.label)
+                        
+                        Spacer()
+                        
+                        TextField("\(newCash)", text: $cashTextValue) { _ in
+                            checkValue()
+                        }
+                        .font(Font.headline.weight(isChoose ? .bold : .medium))
+                        .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 20)))
+                        .frame(alignment: .trailing)
+                        .multilineTextAlignment(.trailing)
+                        .keyboardType(.decimalPad)
+                        .alert("Wrong Format", isPresented: $showAlert, actions: {}) {
+                            Text("Please enter true value")
+                        }
+                        
+                            
+                    }
+                    .padding()
+                }
+                
+            }//zstack
+            .ignoresSafeArea()
+           
+    }//body
+    
+    
+    private func checkValue() {
+        if let value = Double(cashTextValue) {
+            newCash = round(100*value)/100
+            cashTextValue = "\(newCash)"
+            self.isChoose.toggle()
+            return
+        }
+        showAlert.toggle()
+        newCash = 0
+        cashTextValue = "0"
     }
-}
+    
+}//view
 
 
 struct EditCashListItem_Previews: PreviewProvider {
     static var previews: some View {
-        EditCashListItem(exchange: "GEL", cash: 2746.76, flag: "GE", isChoose: false, cashTextValue: .constant("1345"))
+        EditCashListItem(exchange: "GEL", flag: "GE", newCash: .constant(1234), cashTextValue: "1234")
     }
 }
