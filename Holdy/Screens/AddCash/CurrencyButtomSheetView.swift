@@ -39,17 +39,16 @@ struct CurrencyButtomSheetView: View {
                 
                 VStack(spacing: 16){
                    
-                        ForEach(currencies, id: \.self) { currency in
-                                ItemCurrencyButtomSheetView(
-                                 exchange: currency.exchange.rawValue,
-                                 addLabel: currency.label.rawValue,
-                                 flag: currency.flag.rawValue,
-                                 icon: currency.figure.rawValue,
-                                 isOn: false
-                                )
-                                 
-                          }
-
+                    ForEach(currencies, id: \.self) { currency in
+                            ItemCurrencyButtomSheetView(
+                             exchange: currency.exchange.rawValue,
+                             addLabel: currency.label.rawValue,
+                             flag: currency.flag.rawValue,
+                             icon: currency.figure.rawValue,
+                             isOn: false
+                            )
+                             
+                    }
                     
                 }
                 .padding()
