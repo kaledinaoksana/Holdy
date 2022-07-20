@@ -9,8 +9,13 @@ import SwiftUI
 
 struct CurrencyButtomSheetView: View {
     
+    @Binding var show: Bool
+    
     
     let currencies = Currency.getCurrency()
+    var openHeight = UIScreen.main.bounds.size.height/2 - Constants.sheetCurHeight/2
+    var closeHeight = UIScreen.main.bounds.size.height/2 + Constants.sheetCurHeight/2
+    
     
     var body: some View {
         
@@ -35,32 +40,34 @@ struct CurrencyButtomSheetView: View {
                 VStack(spacing: 16){
                    
                         ForEach(currencies, id: \.self) { currency in
-                                 
                                 ItemCurrencyButtomSheetView(
                                  exchange: currency.exchange.rawValue,
                                  addLabel: currency.label.rawValue,
                                  flag: currency.flag.rawValue,
                                  icon: currency.figure.rawValue,
-                                 isOn: true)
+                                 isOn: false
+                                )
                                  
                           }
-                       
-                   
+
                     
                 }
                 .padding()
             }
         
         }
+        .offset(y: show ? openHeight : closeHeight)
+        .ignoresSafeArea()
+        
     }//body
 }//view
 
 struct CurrencyButtomSheetView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack{
-            Color.appGreen
+            Color.appGrey
                 .ignoresSafeArea()
-            CurrencyButtomSheetView()
+            CurrencyButtomSheetView(show: .constant(true))
         }
     }
 }

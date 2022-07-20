@@ -35,7 +35,6 @@
 		2A7AAD90287D9584002E6867 /* Preview Content.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AAD8F287D9584002E6867 /* Preview Content.xcassets */; };
 		2A7AAD93287D961B002E6867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AAD92287D961B002E6867 /* Assets.xcassets */; };
 		2ADB66EA2887F65C005C8EC2 /* MainButtomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */; };
-		2ADB66EE2888001D005C8EC2 /* MainButtomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66ED2888001D005C8EC2 /* MainButtomSheet.swift */; };
 		2ADB66F028881D17005C8EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66EF28881D17005C8EC2 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +67,6 @@
 		2A7AAD8F287D9584002E6867 /* Preview Content.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Content.xcassets"; sourceTree = "<group>"; };
 		2A7AAD92287D961B002E6867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtomSheetView.swift; sourceTree = "<group>"; };
-		2ADB66ED2888001D005C8EC2 /* MainButtomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtomSheet.swift; sourceTree = "<group>"; };
 		2ADB66EF28881D17005C8EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +87,6 @@
 			children = (
 				2A7AAD75287D911C002E6867 /* WalletView.swift */,
 				2A421F3328883EC400579406 /* ItemMainButtonSheetView.swift */,
-				2ADB66ED2888001D005C8EC2 /* MainButtomSheet.swift */,
 				2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */,
 				2A7AAD69287D911C002E6867 /* CashListItem.swift */,
 				2A7AAD71287D911C002E6867 /* AddButtonView.swift */,
@@ -339,7 +336,6 @@
 				2A421F3828884A0400579406 /* AddCashView.swift in Sources */,
 				2A421F3028883A2C00579406 /* AddCashListItem.swift in Sources */,
 				2A421F3428883EC400579406 /* ItemMainButtonSheetView.swift in Sources */,
-				2ADB66EE2888001D005C8EC2 /* MainButtomSheet.swift in Sources */,
 				2A7AAD82287D911C002E6867 /* AddButtonView.swift in Sources */,
 				2A7AAD86287D911C002E6867 /* CustomShapes.swift in Sources */,
 				2A7AAD7D287D911C002E6867 /* CashListItem.swift in Sources */,

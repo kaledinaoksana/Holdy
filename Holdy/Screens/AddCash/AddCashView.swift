@@ -25,6 +25,7 @@ struct AddCashView: View {
     @State private var isNavigationBarHidden: Bool = true
     @State private var isCurrencyHidden: Bool = false
     @State private var isSaveDisabled: Bool = true
+    @State var isShowingSheet = false
     
     
     var body: some View {
@@ -37,7 +38,7 @@ struct AddCashView: View {
                 VStack{
                     HStack(){
                         
-                        Button (action: {}) { //Save newCash in DB
+                        Button (action: cancel) {
                             Text("Cancel")
                                 .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 17)))
                                 .foregroundColor(Color.blue)
@@ -50,7 +51,7 @@ struct AddCashView: View {
                         
                         Spacer()
                         
-                        Button (action: saveCash) { //Save newCash in DB
+                        Button (action: addCash) { //Save newCash in DB
                             Text("Add")
                                 .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 17)))
                                 .bold()
@@ -58,7 +59,7 @@ struct AddCashView: View {
                         }
                         .disabled(isSaveDisabled)
                     
-                    }
+                    } //HStack - navigation bar
                     .padding(EdgeInsets(top: 10,
                                         leading: 0,
                                         bottom: 10,
@@ -76,7 +77,7 @@ struct AddCashView: View {
                         
                         if !isCurrencyHidden {
                             AddCashListItem(exchange: exchange, flag: flag){
-                                
+                                withAnimation(Constants.anim) { isShowingSheet = true }
                             }
                                 .focused($isInputActive)
                                 .toolbar {
@@ -88,25 +89,55 @@ struct AddCashView: View {
                                         }
                                     }
                                 }
-                        }
-                        
-                            
-                        
-                    }
+                        }//if
+                    }//VStack
                   
                     Spacer()
                    
-                }
+                }//VStack
                 .padding()
+                
+                
+                
+                withAnimation(.easeOut) {
+                    Color
+                        .black
+                        .opacity(isShowingSheet ? 0.48 : 0.0)
+                        .ignoresSafeArea()
+                        .gesture(TapGesture()
+                              .onEnded{
+                                    withAnimation(Constants.anim) { isShowingSheet = false }
+                              }
+                        )
+                }
+                  
+                
+                CurrencyButtomSheetView(show: $isShowingSheet)
+                    .gesture(DragGesture()
+                            .onEnded{ _ in
+                                withAnimation(Constants.anim) { isShowingSheet = false }
+                            }
+                    )
+                   
+                
+                
+                
+                
+                
             }//ZStack
             .navigationBarHidden(self.isNavigationBarHidden)
             .onAppear{self.isNavigationBarHidden = true}
             
+            
         }//NavigationView for toolbar
     }//body
     
-    private func saveCash(){
+    private func addCash(){
         cash = newCash
+        isPresented.toggle()
+    }
+    
+    private func cancel(){
         isPresented.toggle()
     }
     

@@ -14,6 +14,8 @@ struct ItemMainButtonSheetView: View {
     let color: Color
     let action: () -> Void
     
+    
+    
     var body: some View {
         
         HStack(spacing: 12){
@@ -40,10 +42,11 @@ struct ItemMainButtonSheetView: View {
                     .frame(width: 7, height: 14)
                     .foregroundColor(Color.black.opacity(0.24))
             }
-        }
+        }//HStack
+        
        
-    }
-}
+    }//body
+}//view
 
 struct ItemSheetView_Previews: PreviewProvider {
     static var previews: some View {

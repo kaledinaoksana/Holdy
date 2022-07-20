@@ -18,7 +18,7 @@ struct AddCashListItem: View {
     @State private var showAlert = false
     
     @State var cashTextValue = "0"
-    var savedCash: Double = 0
+    @State var savedCash: Double = 0
     
     
     var body: some View {
@@ -81,7 +81,7 @@ struct AddCashListItem: View {
     
     private func checkValue() {
         if let value = Double(cashTextValue) {
-            
+            savedCash = value
             self.isChoose.toggle()
             return
         }

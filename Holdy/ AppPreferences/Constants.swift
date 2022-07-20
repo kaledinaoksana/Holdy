@@ -10,6 +10,7 @@ import SwiftUI
 struct Constants {
     
     static let sheetHeight: CGFloat = 327
+    static let sheetCurHeight: CGFloat = 317
     static let sheetRadius: CGFloat = 8
     static let anim: Animation = .easeIn(duration: 0.35)
 

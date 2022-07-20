@@ -9,6 +9,11 @@ import SwiftUI
 
 struct MainButtomSheetView: View {
     
+    @Binding var show: Bool
+    
+    var openHeight = UIScreen.main.bounds.size.height/2 - Constants.sheetHeight/2
+    var closeHeight = UIScreen.main.bounds.size.height/2 + Constants.sheetHeight/2
+    
     var body: some View {
         
         ZStack(alignment: .top){
@@ -42,9 +47,11 @@ struct MainButtomSheetView: View {
                     }
                 }
                 .padding()
-        }
+            }//VStack
         
-        }
+        }//ZStack
+        .offset(y: show ? openHeight : closeHeight)
+        .ignoresSafeArea()
         
     }//body
 }//view
@@ -54,7 +61,7 @@ struct ButtomSheetView_Previews: PreviewProvider {
         ZStack{
             Color.appGrey
                 .ignoresSafeArea()
-            MainButtomSheetView()
+            MainButtomSheetView(show: .constant(true))
         }
     }
 }
