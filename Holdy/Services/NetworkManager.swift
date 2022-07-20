@@ -34,7 +34,7 @@ class NetworkManager{
             var res = 0.0
             let url = "https://api.exchangerate.host/latest?base=\(exchange)&amount=\(cash)"
         
-            if currencyFetch != exchange && cash != 0.0 {
+        if currencyFetch != exchange && cash != 0.0 {
                 
                     do {
                         let currency = try await self.apiRequestAsync(url:url)

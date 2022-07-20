@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "discount-symbol-svgrepo-com 1discount.pdf",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "discount-symbol-svgrepo-com 1discount-1.pdf",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "discount-symbol-svgrepo-com 1discount-2.pdf",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}

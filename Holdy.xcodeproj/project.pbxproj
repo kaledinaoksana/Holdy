@@ -13,6 +13,11 @@
 		2A07AC81288066E700860C2C /* EditCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC80288066E700860C2C /* EditCashView.swift */; };
 		2A3B843D2880AFE500E81D2A /* EditCashListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B843C2880AFE500E81D2A /* EditCashListItem.swift */; };
 		2A3B843F2880BA7E00E81D2A /* DeleteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B843E2880BA7E00E81D2A /* DeleteButtonView.swift */; };
+		2A421F3028883A2C00579406 /* AddCashListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421F2F28883A2C00579406 /* AddCashListItem.swift */; };
+		2A421F3228883E7F00579406 /* CurrencyButtomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421F3128883E7F00579406 /* CurrencyButtomSheetView.swift */; };
+		2A421F3428883EC400579406 /* ItemMainButtonSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421F3328883EC400579406 /* ItemMainButtonSheetView.swift */; };
+		2A421F3628883EEF00579406 /* ItemCurrencyButtomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421F3528883EEF00579406 /* ItemCurrencyButtomSheetView.swift */; };
+		2A421F3828884A0400579406 /* AddCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421F3728884A0300579406 /* AddCashView.swift */; };
 		2A7AAD52287D9032002E6867 /* HoldyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD51287D9032002E6867 /* HoldyApp.swift */; };
 		2A7AAD5B287D9032002E6867 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD5A287D9032002E6867 /* Persistence.swift */; };
 		2A7AAD5E287D9032002E6867 /* Holdy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD5C287D9032002E6867 /* Holdy.xcdatamodeld */; };
@@ -29,6 +34,9 @@
 		2A7AAD89287D911C002E6867 /* DebtsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AAD7A287D911C002E6867 /* DebtsImageView.swift */; };
 		2A7AAD90287D9584002E6867 /* Preview Content.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AAD8F287D9584002E6867 /* Preview Content.xcassets */; };
 		2A7AAD93287D961B002E6867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AAD92287D961B002E6867 /* Assets.xcassets */; };
+		2ADB66EA2887F65C005C8EC2 /* MainButtomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */; };
+		2ADB66EE2888001D005C8EC2 /* MainButtomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66ED2888001D005C8EC2 /* MainButtomSheet.swift */; };
+		2ADB66F028881D17005C8EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66EF28881D17005C8EC2 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +46,11 @@
 		2A07AC80288066E700860C2C /* EditCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCashView.swift; sourceTree = "<group>"; };
 		2A3B843C2880AFE500E81D2A /* EditCashListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCashListItem.swift; sourceTree = "<group>"; };
 		2A3B843E2880BA7E00E81D2A /* DeleteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonView.swift; sourceTree = "<group>"; };
+		2A421F2F28883A2C00579406 /* AddCashListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCashListItem.swift; sourceTree = "<group>"; };
+		2A421F3128883E7F00579406 /* CurrencyButtomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyButtomSheetView.swift; sourceTree = "<group>"; };
+		2A421F3328883EC400579406 /* ItemMainButtonSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMainButtonSheetView.swift; sourceTree = "<group>"; };
+		2A421F3528883EEF00579406 /* ItemCurrencyButtomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCurrencyButtomSheetView.swift; sourceTree = "<group>"; };
+		2A421F3728884A0300579406 /* AddCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCashView.swift; sourceTree = "<group>"; };
 		2A7AAD4E287D9032002E6867 /* Holdy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holdy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7AAD51287D9032002E6867 /* HoldyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldyApp.swift; sourceTree = "<group>"; };
 		2A7AAD5A287D9032002E6867 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -54,6 +67,9 @@
 		2A7AAD7A287D911C002E6867 /* DebtsImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtsImageView.swift; sourceTree = "<group>"; };
 		2A7AAD8F287D9584002E6867 /* Preview Content.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Content.xcassets"; sourceTree = "<group>"; };
 		2A7AAD92287D961B002E6867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtomSheetView.swift; sourceTree = "<group>"; };
+		2ADB66ED2888001D005C8EC2 /* MainButtomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtomSheet.swift; sourceTree = "<group>"; };
+		2ADB66EF28881D17005C8EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				2A7AAD75287D911C002E6867 /* WalletView.swift */,
+				2A421F3328883EC400579406 /* ItemMainButtonSheetView.swift */,
+				2ADB66ED2888001D005C8EC2 /* MainButtomSheet.swift */,
+				2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */,
 				2A7AAD69287D911C002E6867 /* CashListItem.swift */,
 				2A7AAD71287D911C002E6867 /* AddButtonView.swift */,
 			);
@@ -125,6 +144,10 @@
 		2A07AC842880676200860C2C /* AddCash */ = {
 			isa = PBXGroup;
 			children = (
+				2A421F3728884A0300579406 /* AddCashView.swift */,
+				2A421F2F28883A2C00579406 /* AddCashListItem.swift */,
+				2A421F3128883E7F00579406 /* CurrencyButtomSheetView.swift */,
+				2A421F3528883EEF00579406 /* ItemCurrencyButtomSheetView.swift */,
 			);
 			path = AddCash;
 			sourceTree = "<group>";
@@ -167,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				2A07AC74287DBCE000860C2C /* AppPreferences.swift */,
+				2ADB66EF28881D17005C8EC2 /* Constants.swift */,
 				2A7AAD6C287D911C002E6867 /* ColorExtension.swift */,
 			);
 			path = " AppPreferences";
@@ -293,10 +317,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A07AC75287DBCE000860C2C /* AppPreferences.swift in Sources */,
+				2ADB66EA2887F65C005C8EC2 /* MainButtomSheetView.swift in Sources */,
 				2A7AAD5B287D9032002E6867 /* Persistence.swift in Sources */,
 				2A7AAD85287D911C002E6867 /* WalletView.swift in Sources */,
 				2A07AC7B288064AF00860C2C /* CurrencyEx.swift in Sources */,
 				2A7AAD83287D911C002E6867 /* ContentView.swift in Sources */,
+				2ADB66F028881D17005C8EC2 /* Constants.swift in Sources */,
 				2A07AC7928802A5B00860C2C /* NetworkManager.swift in Sources */,
 				2A07AC81288066E700860C2C /* EditCashView.swift in Sources */,
 				2A3B843F2880BA7E00E81D2A /* DeleteButtonView.swift in Sources */,
@@ -304,10 +330,16 @@
 				2A7AAD89287D911C002E6867 /* DebtsImageView.swift in Sources */,
 				2A7AAD5E287D9032002E6867 /* Holdy.xcdatamodeld in Sources */,
 				2A7AAD87287D911C002E6867 /* CashImageView.swift in Sources */,
+				2A421F3228883E7F00579406 /* CurrencyButtomSheetView.swift in Sources */,
 				2A3B843D2880AFE500E81D2A /* EditCashListItem.swift in Sources */,
 				2A7AAD88287D911C002E6867 /* SavingsImageView.swift in Sources */,
 				2A7AAD52287D9032002E6867 /* HoldyApp.swift in Sources */,
 				2A7AAD7F287D911C002E6867 /* ColorExtension.swift in Sources */,
+				2A421F3628883EEF00579406 /* ItemCurrencyButtomSheetView.swift in Sources */,
+				2A421F3828884A0400579406 /* AddCashView.swift in Sources */,
+				2A421F3028883A2C00579406 /* AddCashListItem.swift in Sources */,
+				2A421F3428883EC400579406 /* ItemMainButtonSheetView.swift in Sources */,
+				2ADB66EE2888001D005C8EC2 /* MainButtomSheet.swift in Sources */,
 				2A7AAD82287D911C002E6867 /* AddButtonView.swift in Sources */,
 				2A7AAD86287D911C002E6867 /* CustomShapes.swift in Sources */,
 				2A7AAD7D287D911C002E6867 /* CashListItem.swift in Sources */,

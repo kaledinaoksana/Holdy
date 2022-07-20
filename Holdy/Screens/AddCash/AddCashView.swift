@@ -1,13 +1,13 @@
 //
-//  EditCashView.swift
+//  AddCashView.swift
 //  Holdy
 //
-//  Created by Oksana Kaledina on 14.07.2022.
+//  Created by Oksana Kaledina on 20.07.2022.
 //
 
 import SwiftUI
 
-struct EditCashView: View {
+struct AddCashView: View {
     
     let exchange: String
     @Binding var cash: Double
@@ -26,8 +26,8 @@ struct EditCashView: View {
     @State private var isCurrencyHidden: Bool = false
     @State private var isSaveDisabled: Bool = true
     
+    
     var body: some View {
-       
         NavigationView{
                     
             ZStack{
@@ -36,10 +36,22 @@ struct EditCashView: View {
                 
                 VStack{
                     HStack(){
+                        
+                        Button (action: {}) { //Save newCash in DB
+                            Text("Cancel")
+                                .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 17)))
+                                .foregroundColor(Color.blue)
+                        }
+                        
                         Spacer()
-                        //ACTION SAVE
+                        Text("Cash")
+                            .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 17)))
+                            .bold()
+                        
+                        Spacer()
+                        
                         Button (action: saveCash) { //Save newCash in DB
-                            Text("Save")
+                            Text("Add")
                                 .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 17)))
                                 .bold()
                                 .foregroundColor(isSaveDisabled ? Color.gray: Color.blue)
@@ -63,7 +75,9 @@ struct EditCashView: View {
                         
                         
                         if !isCurrencyHidden {
-                            EditCashListItem(exchange: exchange, flag: flag, newCash: $newCash, cashTextValue: cashText)
+                            AddCashListItem(exchange: exchange, flag: flag){
+                                
+                            }
                                 .focused($isInputActive)
                                 .toolbar {
                                     ToolbarItemGroup(placement: .keyboard){
@@ -81,14 +95,7 @@ struct EditCashView: View {
                     }
                   
                     Spacer()
-                    
-                    DeleteButtonView(){
-                        isSaveDisabled = false
-                        isCurrencyHidden = true
-                        newCash = 0.0
-                        
-                    }
-                    .padding()
+                   
                 }
                 .padding()
             }//ZStack
@@ -103,14 +110,10 @@ struct EditCashView: View {
         isPresented.toggle()
     }
     
-    
-}//View
+}
 
-    
-    
-struct EditCashView_Previews: PreviewProvider {
+struct AddCashView_Previews: PreviewProvider {
     static var previews: some View {
-        EditCashView(exchange: "GEL", cash: .constant(2746.76), newCash: 2746.76, flag: "GE", isPresented: .constant(true))
-//.previewInterfaceOrientation(.portraitUpsideDown)
+        AddCashView(exchange: "GEL", cash: .constant(2746.76), newCash: 2746.76, flag: "GE", isPresented: .constant(true))
     }
 }
