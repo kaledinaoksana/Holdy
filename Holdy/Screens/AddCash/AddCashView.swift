@@ -10,8 +10,8 @@ import SwiftUI
 struct AddCashView: View {
     
     let exchange: String
-    @Binding var cash: Double
-    @State var newCash: Double
+    @State var cash: Double = 0.0
+    @State var newCash: Double = 0.0
     let flag: String
     @Binding var isPresented: Bool
     
@@ -145,6 +145,6 @@ struct AddCashView: View {
 
 struct AddCashView_Previews: PreviewProvider {
     static var previews: some View {
-        AddCashView(exchange: "GEL", cash: .constant(2746.76), newCash: 2746.76, flag: "GE", isPresented: .constant(true))
+        AddCashView(exchange: "GEL", flag: "GE", isPresented: .constant(true))
     }
 }

@@ -9,11 +9,12 @@ import SwiftUI
 
 struct EditCashView: View {
     
+    @Environment(\.dismiss) var dismiss
+    
     let exchange: String
     @Binding var cash: Double
     @State var newCash: Double
     let flag: String
-    @Binding var isPresented: Bool
     
     
     private var cashText: String{
@@ -100,7 +101,7 @@ struct EditCashView: View {
     
     private func saveCash(){
         cash = newCash
-        isPresented.toggle()
+        dismiss()
     }
     
     
@@ -110,7 +111,7 @@ struct EditCashView: View {
     
 struct EditCashView_Previews: PreviewProvider {
     static var previews: some View {
-        EditCashView(exchange: "GEL", cash: .constant(2746.76), newCash: 2746.76, flag: "GE", isPresented: .constant(true))
+        EditCashView(exchange: "GEL", cash: .constant(2746.76), newCash: 2746.76, flag: "GE")
 //.previewInterfaceOrientation(.portraitUpsideDown)
     }
 }

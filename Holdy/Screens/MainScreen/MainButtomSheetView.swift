@@ -10,6 +10,7 @@ import SwiftUI
 struct MainButtomSheetView: View {
     
     @Binding var show: Bool
+    @State var isPresented: Bool = false
     
     var openHeight = UIScreen.main.bounds.size.height/2 - Constants.sheetHeight/2
     var closeHeight = UIScreen.main.bounds.size.height/2 + Constants.sheetHeight/2
@@ -29,22 +30,16 @@ struct MainButtomSheetView: View {
                 
                 VStack(spacing: 20){
                     
+                    Button(action: {isPresented.toggle()}){
+                        ItemMainButtonSheetView(image: "coin", label: "Cash", color: Color.appGrey)
+                    }
+                    .sheet(isPresented: $isPresented)
+                    {AddCashView(exchange: "GEL", flag: "GE", isPresented: $isPresented)}
                     
-                    ItemMainButtonSheetView(image: "coin", label: "Cash", color: Color.appGrey) {
-                        
-                    }
-                    ItemMainButtonSheetView(image: "bank", label: "Bank account", color: Color.appGreyBlue) {
-                        
-                    }
-                    ItemMainButtonSheetView(image: "mountain", label: "Saving goal", color: Color.appGreen) {
-                        
-                    }
-                    ItemMainButtonSheetView(image: "discount", label: "Debt", color: Color.appRed) {
-                        
-                    }
-                    ItemMainButtonSheetView(image: "home", label: "Property", color: Color.appBlue) {
-                        
-                    }
+                    ItemMainButtonSheetView(image: "bank", label: "Bank account", color: Color.appGreyBlue)
+                    ItemMainButtonSheetView(image: "mountain", label: "Saving goal", color: Color.appGreen)
+                    ItemMainButtonSheetView(image: "discount", label: "Debt", color: Color.appRed)
+                    ItemMainButtonSheetView(image: "home", label: "Property", color: Color.appBlue)
                 }
                 .padding()
             }//VStack

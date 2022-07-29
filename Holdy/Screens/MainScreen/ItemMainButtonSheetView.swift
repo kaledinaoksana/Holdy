@@ -12,7 +12,6 @@ struct ItemMainButtonSheetView: View {
     let image: String
     let label: String
     let color: Color
-    let action: () -> Void
     
     
     
@@ -34,14 +33,15 @@ struct ItemMainButtonSheetView: View {
             Text(label)
                 .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 15)))
                 .bold()
+                .foregroundColor(.black)
             
             Spacer()
-            Button(action: {}){
+           // Button(action: {}){
                 Image("next")
                     .resizable()
                     .frame(width: 7, height: 14)
                     .foregroundColor(Color.black.opacity(0.24))
-            }
+            //}
         }//HStack
         
        
@@ -50,6 +50,6 @@ struct ItemMainButtonSheetView: View {
 
 struct ItemSheetView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemMainButtonSheetView(image: "coin", label: "Cash", color: Color.gray, action: {})
+        ItemMainButtonSheetView(image: "coin", label: "Cash", color: Color.gray)
     }
 }

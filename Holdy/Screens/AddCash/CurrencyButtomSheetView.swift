@@ -12,7 +12,7 @@ struct CurrencyButtomSheetView: View {
     @Binding var show: Bool
     
     
-    let currencies = Currency.getCurrency()
+    let currencies = CurrencyOff.getCurrency()
     var openHeight = UIScreen.main.bounds.size.height/2 - Constants.sheetCurHeight/2
     var closeHeight = UIScreen.main.bounds.size.height/2 + Constants.sheetCurHeight/2
     
