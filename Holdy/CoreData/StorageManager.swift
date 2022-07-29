@@ -18,7 +18,6 @@ class StorageManager {
         container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         container.viewContext.automaticallyMergesChangesFromParent = true
         
-        
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
 
            if let error = error as NSError? {

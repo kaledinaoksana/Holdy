@@ -178,9 +178,9 @@
 		2A7AAD50287D9032002E6867 /* Holdy */ = {
 			isa = PBXGroup;
 			children = (
+				2A945B25289403E600FF27F1 /* Holdy.xcdatamodeld */,
 				2A88B4802892DE78007885E0 /* AppDelegate.swift */,
 				2A88B4812892DE78007885E0 /* SceneDelegate.swift */,
-				2A945B25289403E600FF27F1 /* Holdy.xcdatamodeld */,
 				2A88B4862892F2D1007885E0 /* HoldyApp.swift */,
 				2A88B48C2893CC91007885E0 /* Info.plist */,
 				2A07AC7D2880650900860C2C /* Screens */,
