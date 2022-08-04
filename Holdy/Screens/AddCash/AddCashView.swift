@@ -9,18 +9,29 @@ import SwiftUI
 
 struct AddCashView: View {
     
-    let exchange: String
-    @State var cash: Double = 0.0
-    @State var newCash: Double = 0.0
-    let flag: String
-    @Binding var isPresented: Bool
+    @Environment(\.managedObjectContext) var moc
     
+    let preferences = AppPreferences.getPreferences()
     
-    private var cashText: String{
-        "\(cash)"
+    var exchange: String {
+        if let ind = cur.firstIndex(where: {$0.isOn == true}){
+            return cur[ind].exchange.rawValue
+        }
+        return preferences.mainCurrency.exchange.rawValue
     }
     
+    var flag: String{
+       if let ind = cur.firstIndex(where: {$0.isOn == true}){
+           return cur[ind].flag.rawValue
+       }
+        return preferences.mainCurrency.flag.rawValue
+   }
+    
+    
+    @State var newCash: Double = 0.0
+    @State var cur = CurrencyManager.shared.listOfCurrency
 
+    @Binding var isPresented: Bool
     @FocusState private var isInputActive: Bool
     @State private var isNavigationBarHidden: Bool = true
     @State private var isCurrencyHidden: Bool = false
@@ -76,8 +87,16 @@ struct AddCashView: View {
                         
                         
                         if !isCurrencyHidden {
-                            AddCashListItem(exchange: exchange, flag: flag){
+                            AddCashListItem(
+                                exchange: exchange,
+                                flag: flag,
+                                newCash: $newCash
+                            ){
+                                if let ind = cur.firstIndex(where: {$0.exchange.rawValue == exchange}){
+                                    cur[ind].isOn = true
+                                }
                                 withAnimation(Constants.anim) { isShowingSheet = true }
+                                
                             }
                                 .focused($isInputActive)
                                 .toolbar {
@@ -89,10 +108,15 @@ struct AddCashView: View {
                                         }
                                     }
                                 }
+                            
+                          
+                            
                         }//if
                     }//VStack
                   
                     Spacer()
+                    
+                   
                    
                 }//VStack
                 .padding()
@@ -112,18 +136,14 @@ struct AddCashView: View {
                 }
                   
                 
-                CurrencyButtomSheetView(show: $isShowingSheet)
+                CurrencyButtomSheetView(show: $isShowingSheet, cur: $cur)
                     .gesture(DragGesture()
                             .onEnded{ _ in
-                                withAnimation(Constants.anim) { isShowingSheet = false }
+                                withAnimation(Constants.anim) { isShowingSheet = false
+                                }
                             }
                     )
-                   
-                
-                
-                
-                
-                
+                      
             }//ZStack
             .navigationBarHidden(self.isNavigationBarHidden)
             .onAppear{self.isNavigationBarHidden = true}
@@ -133,7 +153,23 @@ struct AddCashView: View {
     }//body
     
     private func addCash(){
-        cash = newCash
+        
+        let m = Money(context: self.moc)
+        m.newCash = newCash
+        m.coming = true
+        m.date = Date()
+        m.cashWallet = Cash(context: self.moc)
+        m.cashWallet?.currency = Currency(context: self.moc)
+        m.cashWallet?.exchange = exchange
+        if let found = cur.first(where: {$0.exchange.rawValue == exchange}) {
+            m.cashWallet?.currency?.label = found.label.rawValue
+            m.cashWallet?.currency?.flag = found.flag.rawValue
+            m.cashWallet?.currency?.figure = found.figure.rawValue
+        }
+            
+        try? self.moc.save()
+        //cash = newCash
+        
         isPresented.toggle()
     }
     
@@ -142,9 +178,13 @@ struct AddCashView: View {
     }
     
 }
-
-struct AddCashView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddCashView(exchange: "GEL", flag: "GE", isPresented: .constant(true))
-    }
-}
+//
+//struct AddCashView_Previews: PreviewProvider {
+//    static var previews: some View {
+//
+//        let context = StorageManager.shared.persistentContainer.viewContext
+//
+//        return  AddCashView(exchange: "GEL", flag: "GE", isPresented: .constant(true)).environment(\.managedObjectContext, context)
+//        //AddCashView(exchange: "GEL", flag: "GE", isPresented: .constant(true))
+//    }
+//}

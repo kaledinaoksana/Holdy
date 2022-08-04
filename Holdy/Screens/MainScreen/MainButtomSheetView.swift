@@ -11,6 +11,8 @@ struct MainButtomSheetView: View {
     
     @Binding var show: Bool
     @State var isPresented: Bool = false
+
+    var cur = CurrencyManager.shared.listOfCurrency
     
     var openHeight = UIScreen.main.bounds.size.height/2 - Constants.sheetHeight/2
     var closeHeight = UIScreen.main.bounds.size.height/2 + Constants.sheetHeight/2
@@ -32,9 +34,16 @@ struct MainButtomSheetView: View {
                     
                     Button(action: {isPresented.toggle()}){
                         ItemMainButtonSheetView(image: "coin", label: "Cash", color: Color.appGrey)
+                        
                     }
                     .sheet(isPresented: $isPresented)
-                    {AddCashView(exchange: "GEL", flag: "GE", isPresented: $isPresented)}
+                    {
+                        AddCashView(
+                            isPresented: $isPresented
+                        )
+                    }
+                    
+                    
                     
                     ItemMainButtonSheetView(image: "bank", label: "Bank account", color: Color.appGreyBlue)
                     ItemMainButtonSheetView(image: "mountain", label: "Saving goal", color: Color.appGreen)

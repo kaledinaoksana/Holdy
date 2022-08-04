@@ -13,3 +13,12 @@ struct CurrencyEx: Codable {
     var date: String
     var rates = [String: Double]()
 }
+
+struct CurrencyManager{
+    
+    static let shared = CurrencyManager()
+    
+    private init() {}
+    
+    var listOfCurrency = CurrencyOff.getCurrency()
+}

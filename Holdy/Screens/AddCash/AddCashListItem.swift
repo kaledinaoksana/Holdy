@@ -11,14 +11,15 @@ struct AddCashListItem: View {
     
     let exchange: String
     let flag: String
+    @Binding var newCash: Double
+    @State var cashTextValue: String = "0.00"
+    
     
     let action: () -> Void
     
+    @State var isSaveNewValue = false
     @State var isChoose = false
     @State private var showAlert = false
-    
-    @State var cashTextValue = "0"
-    @State var savedCash: Double = 0
     
     
     var body: some View {
@@ -56,7 +57,7 @@ struct AddCashListItem: View {
                         
                         Spacer()
                         
-                        TextField("\(savedCash)", text: $cashTextValue) { _ in
+                        TextField(isSaveNewValue ? "0.00" : "\(newCash)"  , text: $cashTextValue) { _ in
                             checkValue()
                         }
                         .font(Font.headline.weight(isChoose ? .bold : .medium))
@@ -81,7 +82,7 @@ struct AddCashListItem: View {
     
     private func checkValue() {
         if let value = Double(cashTextValue) {
-            savedCash = value
+            newCash = value
             self.isChoose.toggle()
             return
         }
@@ -101,6 +102,6 @@ struct AddCashListItem: View {
 
 struct AddCashListItem_Previews: PreviewProvider {
     static var previews: some View {
-        AddCashListItem(exchange: "GEL", flag: "GE", action: {})
+        AddCashListItem(exchange: "GEL", flag: "GE", newCash: .constant(0.0), action: {})
     }
 }

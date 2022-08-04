@@ -10,11 +10,12 @@ import SwiftUI
 struct CurrencyButtomSheetView: View {
     
     @Binding var show: Bool
+    @Binding var cur: [CurrencyOff]
     
-    
-    let currencies = CurrencyOff.getCurrency()
+   // let currencies = CurrencyManager.shared.listOfCurrency
     var openHeight = UIScreen.main.bounds.size.height/2 - Constants.sheetCurHeight/2
     var closeHeight = UIScreen.main.bounds.size.height/2 + Constants.sheetCurHeight/2
+    
     
     
     var body: some View {
@@ -39,15 +40,8 @@ struct CurrencyButtomSheetView: View {
                 
                 VStack(spacing: 16){
                    
-                    ForEach(currencies, id: \.self) { currency in
-                            ItemCurrencyButtomSheetView(
-                             exchange: currency.exchange.rawValue,
-                             addLabel: currency.label.rawValue,
-                             flag: currency.flag.rawValue,
-                             icon: currency.figure.rawValue,
-                             isOn: false
-                            )
-                             
+                    ForEach(cur, id: \.self) { currency in
+                        ItemCurrencyButtomSheetView(currency: currency, cur: $cur)
                     }
                     
                 }
@@ -60,13 +54,15 @@ struct CurrencyButtomSheetView: View {
         
     }//body
 }//view
+//
 
-struct CurrencyButtomSheetView_Previews: PreviewProvider {
-    static var previews: some View {
-        ZStack{
-            Color.appGrey
-                .ignoresSafeArea()
-            CurrencyButtomSheetView(show: .constant(true))
-        }
-    }
-}
+
+//struct CurrencyButtomSheetView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ZStack{
+//            Color.appGrey
+//                .ignoresSafeArea()
+//            CurrencyButtomSheetView(show: .constant(true))
+//        }
+//    }
+//}

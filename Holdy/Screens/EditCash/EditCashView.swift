@@ -10,17 +10,16 @@ import SwiftUI
 struct EditCashView: View {
     
     @Environment(\.dismiss) var dismiss
+    @Environment(\.managedObjectContext) var moc
     
-    let exchange: String
-    @Binding var cash: Double
-    @State var newCash: Double
-    let flag: String
+    let cashModel: FetchedResults<Cash>.Element
     
+    @State var newCash: Double = 0.0
+    var cur = CurrencyManager.shared.listOfCurrency
     
     private var cashText: String{
-        "\(cash)"
+        "\(cashModel.sumCashList)"
     }
-    
 
     @FocusState private var isInputActive: Bool
     @State private var isNavigationBarHidden: Bool = true
@@ -38,7 +37,7 @@ struct EditCashView: View {
                 VStack{
                     HStack(){
                         Spacer()
-                        //ACTION SAVE
+                        
                         Button (action: saveCash) { //Save newCash in DB
                             Text("Save")
                                 .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 17)))
@@ -64,7 +63,12 @@ struct EditCashView: View {
                         
                         
                         if !isCurrencyHidden {
-                            EditCashListItem(exchange: exchange, flag: flag, newCash: $newCash, cashTextValue: cashText)
+                            EditCashListItem(
+                                exchange: cashModel.wrappedExchange,
+                                flag: cashModel.currency?.wrappedFlag ?? "none",
+                                newCash: $newCash,
+                                cashTextValue: cashText
+                            )
                                 .focused($isInputActive)
                                 .toolbar {
                                     ToolbarItemGroup(placement: .keyboard){
@@ -77,17 +81,12 @@ struct EditCashView: View {
                                 }
                         }
                         
-                            
-                        
                     }
                   
                     Spacer()
                     
                     DeleteButtonView(){
-                        isSaveDisabled = false
-                        isCurrencyHidden = true
-                        newCash = 0.0
-                        
+                        deleteCash()
                     }
                     .padding()
                 }
@@ -99,8 +98,35 @@ struct EditCashView: View {
         }//NavigationView for toolbar
     }//body
     
+    
     private func saveCash(){
-        cash = newCash
+
+        moc.delete(cashModel)
+    
+        let money = Money(context: self.moc)
+        money.newCash = newCash
+        money.coming = true
+        money.date = Date()
+        money.cashWallet = Cash(context: self.moc)
+        money.cashWallet?.currency = Currency(context: self.moc)
+        money.cashWallet?.exchange = cashModel.wrappedExchange
+        if let found = cur.first(where: {$0.exchange.rawValue == cashModel.wrappedExchange}) {
+            money.cashWallet?.currency?.label = found.label.rawValue
+            money.cashWallet?.currency?.flag = found.flag.rawValue
+            money.cashWallet?.currency?.figure = found.figure.rawValue
+        }
+            
+        try? self.moc.save()
+        
+        dismiss()
+    }
+    
+    private func deleteCash(){
+
+        isSaveDisabled = false
+        isCurrencyHidden = true
+        moc.delete(cashModel)
+        
         dismiss()
     }
     
@@ -109,9 +135,17 @@ struct EditCashView: View {
 
     
     
-struct EditCashView_Previews: PreviewProvider {
-    static var previews: some View {
-        EditCashView(exchange: "GEL", cash: .constant(2746.76), newCash: 2746.76, flag: "GE")
-//.previewInterfaceOrientation(.portraitUpsideDown)
-    }
-}
+//struct EditCashView_Previews: PreviewProvider {
+//    static var previews: some View {
+//
+////.previewInterfaceOrientation(.portraitUpsideDown)
+//
+//        let context = StorageManager.shared.persistentContainer.viewContext
+//
+//        return  Group {
+//            EditCashView(exchange: "GEL", cash: .constant(2746.76), newCash: 2746.76, flag: "GE").environment(\.managedObjectContext, context)
+//            //.previewInterfaceOrientation(.landscapeLeft)
+//            //WalletView().environment(\.managedObjectContext, context)
+//        }
+//    }
+//}

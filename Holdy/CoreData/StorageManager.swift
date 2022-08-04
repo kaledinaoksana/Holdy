@@ -35,21 +35,21 @@ class StorageManager {
     
     // MARK: - Public Methods
     
-//    func save(completion: @escaping (Error?) -> () = {_ in}) {
-//        if viewContext.hasChanges {
-//            do {
-//                try viewContext.save()
-//                completion(nil)
-//            } catch {
-//                completion(error)
-//            }
-//        }
-//    }
+        func save(completion: @escaping (Error?) -> () = {_ in}) {
+            if persistentContainer.viewContext.hasChanges {
+                do {
+                    try persistentContainer.viewContext.save()
+                    completion(nil)
+                } catch {
+                    completion(error)
+                }
+            }
+        }
 //
-//    func delete(_ object: NSManagedObject, completion: @escaping (Error?) -> () = {_ in}) {
-//        viewContext.delete(object)
-//        save(completion: completion)
-//    }
+        func delete(_ object: NSManagedObject, completion: @escaping (Error?) -> () = {_ in}) {
+            persistentContainer.viewContext.delete(object)
+            save(completion: completion)
+        }
     
     // MARK: - Core Data Saving support
     func saveContext() {

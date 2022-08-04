@@ -11,17 +11,14 @@ struct EditCashListItem: View {
     
     let exchange: String
     let flag: String
-    
-    //@Binding var cashTextValue: String
-    
     @Binding var newCash: Double
     @State var cashTextValue: String
     
     @State var isChoose = false
     @State private var showAlert = false
     
+    
     var body: some View {
-       
        
             ZStack{
                 ZStack{
@@ -44,7 +41,7 @@ struct EditCashListItem: View {
                         
                         Spacer()
                         
-                        TextField("\(newCash)", text: $cashTextValue) { _ in
+                        TextField("\(newCash, specifier: "%.2f")", text: $cashTextValue) { _ in
                             checkValue()
                         }
                         .font(Font.headline.weight(isChoose ? .bold : .medium))

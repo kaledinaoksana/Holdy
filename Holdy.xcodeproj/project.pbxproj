@@ -14,6 +14,8 @@
 		2A14200D28929D7B00377BAF /* ExapmleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14200C28929D7B00377BAF /* ExapmleView.swift */; };
 		2A1420202892BE4200377BAF /* Cash+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14201C2892BE4200377BAF /* Cash+CoreDataProperties.swift */; };
 		2A1420222892BE4200377BAF /* Money+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14201E2892BE4200377BAF /* Money+CoreDataProperties.swift */; };
+		2A30A2AD2899235200F02F05 /* CreateMockClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A30A2AC2899235200F02F05 /* CreateMockClass.swift */; };
+		2A30A2B1289929BA00F02F05 /* Currency+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A30A2AF289929BA00F02F05 /* Currency+CoreDataProperties.swift */; };
 		2A3B843D2880AFE500E81D2A /* EditCashListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B843C2880AFE500E81D2A /* EditCashListItem.swift */; };
 		2A3B843F2880BA7E00E81D2A /* DeleteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B843E2880BA7E00E81D2A /* DeleteButtonView.swift */; };
 		2A421F3028883A2C00579406 /* AddCashListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421F2F28883A2C00579406 /* AddCashListItem.swift */; };
@@ -50,6 +52,8 @@
 		2A14200C28929D7B00377BAF /* ExapmleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExapmleView.swift; path = Holdy/Screens/ExapmleView.swift; sourceTree = SOURCE_ROOT; };
 		2A14201C2892BE4200377BAF /* Cash+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cash+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2A14201E2892BE4200377BAF /* Money+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Money+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2A30A2AC2899235200F02F05 /* CreateMockClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMockClass.swift; sourceTree = "<group>"; };
+		2A30A2AF289929BA00F02F05 /* Currency+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Currency+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2A3B843C2880AFE500E81D2A /* EditCashListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCashListItem.swift; sourceTree = "<group>"; };
 		2A3B843E2880BA7E00E81D2A /* DeleteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonView.swift; sourceTree = "<group>"; };
 		2A421F2F28883A2C00579406 /* AddCashListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCashListItem.swift; sourceTree = "<group>"; };
@@ -159,6 +163,14 @@
 			path = AddCash;
 			sourceTree = "<group>";
 		};
+		2A30A2AB2899230E00F02F05 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2A30A2AC2899235200F02F05 /* CreateMockClass.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		2A7AAD45287D9032002E6867 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +204,7 @@
 				2A7AAD8D287D925A002E6867 /* CoreData */,
 				2A7AAD6B287D911C002E6867 /* AppPreferences */,
 				2A7AAD92287D961B002E6867 /* Assets.xcassets */,
+				2A30A2AB2899230E00F02F05 /* Tests */,
 				2A7AAD91287D9589002E6867 /* Preview Content */,
 			);
 			path = Holdy;
@@ -236,6 +249,7 @@
 		2A7AAD8D287D925A002E6867 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				2A30A2AF289929BA00F02F05 /* Currency+CoreDataProperties.swift */,
 				2A14201C2892BE4200377BAF /* Cash+CoreDataProperties.swift */,
 				2A14201E2892BE4200377BAF /* Money+CoreDataProperties.swift */,
 				2A88B4842892E059007885E0 /* StorageManager.swift */,
@@ -340,6 +354,7 @@
 				2A7AAD85287D911C002E6867 /* WalletView.swift in Sources */,
 				2A07AC7B288064AF00860C2C /* CurrencyEx.swift in Sources */,
 				2A88B4822892DE78007885E0 /* AppDelegate.swift in Sources */,
+				2A30A2AD2899235200F02F05 /* CreateMockClass.swift in Sources */,
 				2A88B4832892DE78007885E0 /* SceneDelegate.swift in Sources */,
 				2A945B27289403E600FF27F1 /* Holdy.xcdatamodeld in Sources */,
 				2A88B4872892F2D1007885E0 /* HoldyApp.swift in Sources */,
@@ -351,6 +366,7 @@
 				2A7AAD89287D911C002E6867 /* DebtsImageView.swift in Sources */,
 				2A7AAD87287D911C002E6867 /* CashImageView.swift in Sources */,
 				2A421F3228883E7F00579406 /* CurrencyButtomSheetView.swift in Sources */,
+				2A30A2B1289929BA00F02F05 /* Currency+CoreDataProperties.swift in Sources */,
 				2A3B843D2880AFE500E81D2A /* EditCashListItem.swift in Sources */,
 				2A14200D28929D7B00377BAF /* ExapmleView.swift in Sources */,
 				2A7AAD88287D911C002E6867 /* SavingsImageView.swift in Sources */,
