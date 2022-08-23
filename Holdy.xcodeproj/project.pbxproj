@@ -42,6 +42,11 @@
 		2ADB66EA2887F65C005C8EC2 /* MainButtomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */; };
 		2ADB66F028881D17005C8EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66EF28881D17005C8EC2 /* Constants.swift */; };
 		2AE05C6328B5508D00EDF38D /* HoldyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6228B5508C00EDF38D /* HoldyLogo.png */; };
+		2AE05C6A28B5530D00EDF38D /* Holdy - Main sheet - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6528B5530D00EDF38D /* Holdy - Main sheet - iPhone 11.png */; };
+		2AE05C6B28B5530D00EDF38D /* Holdy - Currency sheet - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6628B5530D00EDF38D /* Holdy - Currency sheet - iPhone 11.png */; };
+		2AE05C6C28B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6728B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png */; };
+		2AE05C6D28B5530D00EDF38D /* Holdy - add cash - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6828B5530D00EDF38D /* Holdy - add cash - iPhone 11.png */; };
+		2AE05C6E28B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6928B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +86,11 @@
 		2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtomSheetView.swift; sourceTree = "<group>"; };
 		2ADB66EF28881D17005C8EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2AE05C6228B5508C00EDF38D /* HoldyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoldyLogo.png; sourceTree = "<group>"; };
+		2AE05C6528B5530D00EDF38D /* Holdy - Main sheet - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - Main sheet - iPhone 11.png"; sourceTree = "<group>"; };
+		2AE05C6628B5530D00EDF38D /* Holdy - Currency sheet - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - Currency sheet - iPhone 11.png"; sourceTree = "<group>"; };
+		2AE05C6728B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - Edit Balance - iPhone 11.png"; sourceTree = "<group>"; };
+		2AE05C6828B5530D00EDF38D /* Holdy - add cash - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - add cash - iPhone 11.png"; sourceTree = "<group>"; };
+		2AE05C6928B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - Wallet View - iPhone 11.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +183,7 @@
 		2A7AAD45287D9032002E6867 = {
 			isa = PBXGroup;
 			children = (
+				2AE05C6428B5530D00EDF38D /* screens */,
 				2AE05C6228B5508C00EDF38D /* HoldyLogo.png */,
 				2A7AAD50287D9032002E6867 /* Holdy */,
 				2A7AAD4F287D9032002E6867 /* Products */,
@@ -273,6 +284,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		2AE05C6428B5530D00EDF38D /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				2AE05C6528B5530D00EDF38D /* Holdy - Main sheet - iPhone 11.png */,
+				2AE05C6628B5530D00EDF38D /* Holdy - Currency sheet - iPhone 11.png */,
+				2AE05C6728B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png */,
+				2AE05C6828B5530D00EDF38D /* Holdy - add cash - iPhone 11.png */,
+				2AE05C6928B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -337,8 +360,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE05C6D28B5530D00EDF38D /* Holdy - add cash - iPhone 11.png in Resources */,
+				2AE05C6E28B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png in Resources */,
 				2AE05C6328B5508D00EDF38D /* HoldyLogo.png in Resources */,
+				2AE05C6B28B5530D00EDF38D /* Holdy - Currency sheet - iPhone 11.png in Resources */,
 				2A7AAD93287D961B002E6867 /* Assets.xcassets in Resources */,
+				2AE05C6A28B5530D00EDF38D /* Holdy - Main sheet - iPhone 11.png in Resources */,
+				2AE05C6C28B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png in Resources */,
 				2A7AAD90287D9584002E6867 /* Preview Content.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
