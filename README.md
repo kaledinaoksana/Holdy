@@ -17,11 +17,11 @@ Finance app. You can add, remove, change Cash in various currencies. Using the e
 
 ## Screenshots
 
-![App Screenshot](screens\Holdy - Wallet View - iPhone 11.png=true "Wallet View") 
-![App Screenshot](screens\Holdy - Main sheet - iPhone 11.png=true "Main sheet") 
-![App Screenshot](screens\Holdy - Edit Balance - iPhone 11.png=true "Edit balance") 
-![App Screenshot](screens\Holdy - add cash - iPhone 11.png=true "Add cash") 
-![App Screenshot](screens\Holdy - Currency sheet - iPhone 11.png=true "Currency sheet") 
+![App Screenshot](screens\HoldyWalletViewiPhone11.png=true "Wallet View") 
+![App Screenshot](screens\HoldyMainsheetiPhone11.png=true "Main sheet") 
+![App Screenshot](screens\HoldyEditBalanceiPhone11.png=true "Edit balance") 
+![App Screenshot](screens\HoldyaddcashiPhone11.png=true "Add cash") 
+![App Screenshot](screens\HoldyCurrencysheetiPhone11.png=true "Currency sheet") 
 
 ## Acknowledgements
 
