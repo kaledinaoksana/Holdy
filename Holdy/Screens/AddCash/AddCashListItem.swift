@@ -46,6 +46,7 @@ struct AddCashListItem: View {
                                     .font(Font.system(size: UIFontMetrics.default.scaledValue(for: 20)))
                                     .fontWeight(.medium)
                                     .foregroundColor(.label)
+                                    .frame(width: 41)
                                 
                                 Image("down")
                                     .resizable()
