@@ -47,6 +47,7 @@
 		2AE05C6C28B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6728B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png */; };
 		2AE05C6D28B5530D00EDF38D /* Holdy - add cash - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6828B5530D00EDF38D /* Holdy - add cash - iPhone 11.png */; };
 		2AE05C6E28B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6928B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png */; };
+		2AE05C7228B5558100EDF38D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C7128B5558100EDF38D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		2AE05C6728B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - Edit Balance - iPhone 11.png"; sourceTree = "<group>"; };
 		2AE05C6828B5530D00EDF38D /* Holdy - add cash - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - add cash - iPhone 11.png"; sourceTree = "<group>"; };
 		2AE05C6928B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - Wallet View - iPhone 11.png"; sourceTree = "<group>"; };
+		2AE05C7128B5558100EDF38D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			children = (
 				2AE05C6428B5530D00EDF38D /* screens */,
 				2AE05C6228B5508C00EDF38D /* HoldyLogo.png */,
+				2AE05C7128B5558100EDF38D /* README.md */,
 				2A7AAD50287D9032002E6867 /* Holdy */,
 				2A7AAD4F287D9032002E6867 /* Products */,
 			);
@@ -366,6 +369,7 @@
 				2AE05C6B28B5530D00EDF38D /* Holdy - Currency sheet - iPhone 11.png in Resources */,
 				2A7AAD93287D961B002E6867 /* Assets.xcassets in Resources */,
 				2AE05C6A28B5530D00EDF38D /* Holdy - Main sheet - iPhone 11.png in Resources */,
+				2AE05C7228B5558100EDF38D /* README.md in Resources */,
 				2AE05C6C28B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png in Resources */,
 				2A7AAD90287D9584002E6867 /* Preview Content.xcassets in Resources */,
 			);
