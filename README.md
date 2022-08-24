@@ -29,6 +29,7 @@ Finance app. You can add, remove, change cash in various currencies. Using the e
   <img src="screens/HoldyMainScreeniPhone11.png" width=250>
 </p>
 
+ [demo](https://drive.google.com/file/d/10VH0v-rpruAdzE3V1uUaacd78Hva_Sum/view?usp=sharing)
 
 ## Acknowledgements
 
