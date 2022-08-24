@@ -8,7 +8,7 @@ Finance app. You can add, remove, change cash in various currencies. Using the e
 
 ## Features
 
-- SwiftUI 
+- SwiftUI, iOS 15.0
 - Implementation of the async await approach
 - Using the exchange.host API + Alamofire
 - CoreData as database
