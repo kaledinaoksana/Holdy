@@ -11,9 +11,9 @@
 		2A07AC7928802A5B00860C2C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC7828802A5B00860C2C /* NetworkManager.swift */; };
 		2A07AC7B288064AF00860C2C /* CurrencyEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC7A288064AF00860C2C /* CurrencyEx.swift */; };
 		2A07AC81288066E700860C2C /* EditCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC80288066E700860C2C /* EditCashView.swift */; };
-		2A14200D28929D7B00377BAF /* ExapmleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14200C28929D7B00377BAF /* ExapmleView.swift */; };
 		2A1420202892BE4200377BAF /* Cash+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14201C2892BE4200377BAF /* Cash+CoreDataProperties.swift */; };
 		2A1420222892BE4200377BAF /* Money+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14201E2892BE4200377BAF /* Money+CoreDataProperties.swift */; };
+		2A19704D28BE310B00DBD7F4 /* BankAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19704C28BE310B00DBD7F4 /* BankAccountView.swift */; };
 		2A30A2AD2899235200F02F05 /* CreateMockClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A30A2AC2899235200F02F05 /* CreateMockClass.swift */; };
 		2A30A2B1289929BA00F02F05 /* Currency+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A30A2AF289929BA00F02F05 /* Currency+CoreDataProperties.swift */; };
 		2A3B843D2880AFE500E81D2A /* EditCashListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B843C2880AFE500E81D2A /* EditCashListItem.swift */; };
@@ -42,6 +42,7 @@
 		2A945B27289403E600FF27F1 /* Holdy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A945B25289403E600FF27F1 /* Holdy.xcdatamodeld */; };
 		2ADB66EA2887F65C005C8EC2 /* MainButtomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */; };
 		2ADB66F028881D17005C8EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66EF28881D17005C8EC2 /* Constants.swift */; };
+		2AE05C6328B5508D00EDF38D /* HoldyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6228B5508C00EDF38D /* HoldyLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +50,9 @@
 		2A07AC7828802A5B00860C2C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2A07AC7A288064AF00860C2C /* CurrencyEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyEx.swift; sourceTree = "<group>"; };
 		2A07AC80288066E700860C2C /* EditCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCashView.swift; sourceTree = "<group>"; };
-		2A14200C28929D7B00377BAF /* ExapmleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExapmleView.swift; path = Holdy/Screens/ExapmleView.swift; sourceTree = SOURCE_ROOT; };
 		2A14201C2892BE4200377BAF /* Cash+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cash+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2A14201E2892BE4200377BAF /* Money+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Money+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2A19704C28BE310B00DBD7F4 /* BankAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountView.swift; sourceTree = "<group>"; };
 		2A30A2AC2899235200F02F05 /* CreateMockClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMockClass.swift; sourceTree = "<group>"; };
 		2A30A2AF289929BA00F02F05 /* Currency+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Currency+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2A3B843C2880AFE500E81D2A /* EditCashListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCashListItem.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		2A945B26289403E600FF27F1 /* Holdy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Holdy.xcdatamodel; sourceTree = "<group>"; };
 		2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtomSheetView.swift; sourceTree = "<group>"; };
 		2ADB66EF28881D17005C8EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2AE05C6228B5508C00EDF38D /* HoldyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoldyLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +112,6 @@
 		2A07AC7D2880650900860C2C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				2A14200C28929D7B00377BAF /* ExapmleView.swift */,
 				2A07AC842880676200860C2C /* AddCash */,
 				2A07AC832880674A00860C2C /* AddDebt */,
 				2A07AC822880673500860C2C /* AddBankAccount */,
@@ -141,6 +142,7 @@
 		2A07AC822880673500860C2C /* AddBankAccount */ = {
 			isa = PBXGroup;
 			children = (
+				2A19704C28BE310B00DBD7F4 /* BankAccountView.swift */,
 			);
 			path = AddBankAccount;
 			sourceTree = "<group>";
@@ -174,6 +176,7 @@
 		2A7AAD45287D9032002E6867 = {
 			isa = PBXGroup;
 			children = (
+				2AE05C6228B5508C00EDF38D /* HoldyLogo.png */,
 				2A7AAD50287D9032002E6867 /* Holdy */,
 				2A7AAD4F287D9032002E6867 /* Products */,
 			);
@@ -337,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE05C6328B5508D00EDF38D /* HoldyLogo.png in Resources */,
 				2A7AAD93287D961B002E6867 /* Assets.xcassets in Resources */,
 				2A7AAD90287D9584002E6867 /* Preview Content.xcassets in Resources */,
 			);
@@ -368,8 +372,8 @@
 				2A421F3228883E7F00579406 /* CurrencyButtomSheetView.swift in Sources */,
 				2A30A2B1289929BA00F02F05 /* Currency+CoreDataProperties.swift in Sources */,
 				2A3B843D2880AFE500E81D2A /* EditCashListItem.swift in Sources */,
-				2A14200D28929D7B00377BAF /* ExapmleView.swift in Sources */,
 				2A7AAD88287D911C002E6867 /* SavingsImageView.swift in Sources */,
+				2A19704D28BE310B00DBD7F4 /* BankAccountView.swift in Sources */,
 				2A7AAD7F287D911C002E6867 /* ColorExtension.swift in Sources */,
 				2A1420202892BE4200377BAF /* Cash+CoreDataProperties.swift in Sources */,
 				2A88B4852892E059007885E0 /* StorageManager.swift in Sources */,
