@@ -9,8 +9,10 @@
 import Foundation
 import CoreData
 
+@objc(Money)
+public class Money: NSManagedObject {}
 
-extension Money {
+extension Money{
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Money> {
         return NSFetchRequest<Money>(entityName: "Money")
@@ -21,9 +23,15 @@ extension Money {
     @NSManaged public var descript: String?
     @NSManaged public var newCash: Double
     @NSManaged public var cashWallet: Cash?
+    
+    public var wrappedDescript: String{
+        descript ?? "no description"
+    }
+    
+    public var wrappedDate: Date{
+        date ?? Date()
+    }
+    
 
 }
 
-extension Money : Identifiable {
-
-}

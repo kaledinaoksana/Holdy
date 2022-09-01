@@ -13,6 +13,7 @@
 		2A07AC81288066E700860C2C /* EditCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07AC80288066E700860C2C /* EditCashView.swift */; };
 		2A1420202892BE4200377BAF /* Cash+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14201C2892BE4200377BAF /* Cash+CoreDataProperties.swift */; };
 		2A1420222892BE4200377BAF /* Money+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14201E2892BE4200377BAF /* Money+CoreDataProperties.swift */; };
+		2A19704D28BE310B00DBD7F4 /* BankAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19704C28BE310B00DBD7F4 /* BankAccountView.swift */; };
 		2A30A2AD2899235200F02F05 /* CreateMockClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A30A2AC2899235200F02F05 /* CreateMockClass.swift */; };
 		2A30A2B1289929BA00F02F05 /* Currency+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A30A2AF289929BA00F02F05 /* Currency+CoreDataProperties.swift */; };
 		2A3B843D2880AFE500E81D2A /* EditCashListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B843C2880AFE500E81D2A /* EditCashListItem.swift */; };
@@ -42,12 +43,6 @@
 		2ADB66EA2887F65C005C8EC2 /* MainButtomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */; };
 		2ADB66F028881D17005C8EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66EF28881D17005C8EC2 /* Constants.swift */; };
 		2AE05C6328B5508D00EDF38D /* HoldyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6228B5508C00EDF38D /* HoldyLogo.png */; };
-		2AE05C6A28B5530D00EDF38D /* Holdy - Main sheet - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6528B5530D00EDF38D /* Holdy - Main sheet - iPhone 11.png */; };
-		2AE05C6B28B5530D00EDF38D /* Holdy - Currency sheet - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6628B5530D00EDF38D /* Holdy - Currency sheet - iPhone 11.png */; };
-		2AE05C6C28B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6728B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png */; };
-		2AE05C6D28B5530D00EDF38D /* Holdy - add cash - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6828B5530D00EDF38D /* Holdy - add cash - iPhone 11.png */; };
-		2AE05C6E28B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6928B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png */; };
-		2AE05C7228B5558100EDF38D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C7128B5558100EDF38D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +52,7 @@
 		2A07AC80288066E700860C2C /* EditCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCashView.swift; sourceTree = "<group>"; };
 		2A14201C2892BE4200377BAF /* Cash+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cash+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2A14201E2892BE4200377BAF /* Money+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Money+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2A19704C28BE310B00DBD7F4 /* BankAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountView.swift; sourceTree = "<group>"; };
 		2A30A2AC2899235200F02F05 /* CreateMockClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMockClass.swift; sourceTree = "<group>"; };
 		2A30A2AF289929BA00F02F05 /* Currency+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Currency+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2A3B843C2880AFE500E81D2A /* EditCashListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCashListItem.swift; sourceTree = "<group>"; };
@@ -87,12 +83,6 @@
 		2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtomSheetView.swift; sourceTree = "<group>"; };
 		2ADB66EF28881D17005C8EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2AE05C6228B5508C00EDF38D /* HoldyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoldyLogo.png; sourceTree = "<group>"; };
-		2AE05C6528B5530D00EDF38D /* Holdy - Main sheet - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - Main sheet - iPhone 11.png"; sourceTree = "<group>"; };
-		2AE05C6628B5530D00EDF38D /* Holdy - Currency sheet - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - Currency sheet - iPhone 11.png"; sourceTree = "<group>"; };
-		2AE05C6728B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - Edit Balance - iPhone 11.png"; sourceTree = "<group>"; };
-		2AE05C6828B5530D00EDF38D /* Holdy - add cash - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - add cash - iPhone 11.png"; sourceTree = "<group>"; };
-		2AE05C6928B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Holdy - Wallet View - iPhone 11.png"; sourceTree = "<group>"; };
-		2AE05C7128B5558100EDF38D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +142,7 @@
 		2A07AC822880673500860C2C /* AddBankAccount */ = {
 			isa = PBXGroup;
 			children = (
+				2A19704C28BE310B00DBD7F4 /* BankAccountView.swift */,
 			);
 			path = AddBankAccount;
 			sourceTree = "<group>";
@@ -185,9 +176,7 @@
 		2A7AAD45287D9032002E6867 = {
 			isa = PBXGroup;
 			children = (
-				2AE05C6428B5530D00EDF38D /* screens */,
 				2AE05C6228B5508C00EDF38D /* HoldyLogo.png */,
-				2AE05C7128B5558100EDF38D /* README.md */,
 				2A7AAD50287D9032002E6867 /* Holdy */,
 				2A7AAD4F287D9032002E6867 /* Products */,
 			);
@@ -287,18 +276,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		2AE05C6428B5530D00EDF38D /* screens */ = {
-			isa = PBXGroup;
-			children = (
-				2AE05C6528B5530D00EDF38D /* Holdy - Main sheet - iPhone 11.png */,
-				2AE05C6628B5530D00EDF38D /* Holdy - Currency sheet - iPhone 11.png */,
-				2AE05C6728B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png */,
-				2AE05C6828B5530D00EDF38D /* Holdy - add cash - iPhone 11.png */,
-				2AE05C6928B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png */,
-			);
-			path = screens;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -363,14 +340,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE05C6D28B5530D00EDF38D /* Holdy - add cash - iPhone 11.png in Resources */,
-				2AE05C6E28B5530D00EDF38D /* Holdy - Wallet View - iPhone 11.png in Resources */,
 				2AE05C6328B5508D00EDF38D /* HoldyLogo.png in Resources */,
-				2AE05C6B28B5530D00EDF38D /* Holdy - Currency sheet - iPhone 11.png in Resources */,
 				2A7AAD93287D961B002E6867 /* Assets.xcassets in Resources */,
-				2AE05C6A28B5530D00EDF38D /* Holdy - Main sheet - iPhone 11.png in Resources */,
-				2AE05C7228B5558100EDF38D /* README.md in Resources */,
-				2AE05C6C28B5530D00EDF38D /* Holdy - Edit Balance - iPhone 11.png in Resources */,
 				2A7AAD90287D9584002E6867 /* Preview Content.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +373,7 @@
 				2A30A2B1289929BA00F02F05 /* Currency+CoreDataProperties.swift in Sources */,
 				2A3B843D2880AFE500E81D2A /* EditCashListItem.swift in Sources */,
 				2A7AAD88287D911C002E6867 /* SavingsImageView.swift in Sources */,
+				2A19704D28BE310B00DBD7F4 /* BankAccountView.swift in Sources */,
 				2A7AAD7F287D911C002E6867 /* ColorExtension.swift in Sources */,
 				2A1420202892BE4200377BAF /* Cash+CoreDataProperties.swift in Sources */,
 				2A88B4852892E059007885E0 /* StorageManager.swift in Sources */,

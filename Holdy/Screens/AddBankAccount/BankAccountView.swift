@@ -9,7 +9,29 @@ import SwiftUI
 
 struct BankAccountView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack{
+            Color.systemBackground
+                .ignoresSafeArea()
+            
+            VStack{
+                HStack{
+                    Button(action: {}){
+                        Text("Cancel")
+                    }
+                    Spacer()
+                    Text("Bank account")
+                    Spacer()
+                    Button(action: {}){
+                        Text("Cancel")
+                    }
+                }
+                .padding()
+                Spacer()
+                
+            }
+        }//ZStack
+        
     }
 }
 
