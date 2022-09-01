@@ -168,7 +168,6 @@ struct AddCashView: View {
         }
             
         try? self.moc.save()
-        //cash = newCash
         
         isPresented.toggle()
     }
