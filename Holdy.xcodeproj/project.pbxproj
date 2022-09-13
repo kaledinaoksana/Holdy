@@ -43,6 +43,11 @@
 		2ADB66EA2887F65C005C8EC2 /* MainButtomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */; };
 		2ADB66F028881D17005C8EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB66EF28881D17005C8EC2 /* Constants.swift */; };
 		2AE05C6328B5508D00EDF38D /* HoldyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE05C6228B5508C00EDF38D /* HoldyLogo.png */; };
+		2AFBDDAE28D0A7BE0031DFE8 /* BankImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBDDAD28D0A7BE0031DFE8 /* BankImageView.swift */; };
+		2AFBDDB028D0AEFB0031DFE8 /* BankCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBDDAF28D0AEFB0031DFE8 /* BankCircleImageView.swift */; };
+		2AFBDDB228D0C4B50031DFE8 /* AddMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBDDB128D0C4B50031DFE8 /* AddMoreView.swift */; };
+		2AFBDDB528D0CAD80031DFE8 /* MainText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBDDB428D0CAD80031DFE8 /* MainText.swift */; };
+		2AFBDDB728D0E2890031DFE8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBDDB628D0E2890031DFE8 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +88,11 @@
 		2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtomSheetView.swift; sourceTree = "<group>"; };
 		2ADB66EF28881D17005C8EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2AE05C6228B5508C00EDF38D /* HoldyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoldyLogo.png; sourceTree = "<group>"; };
+		2AFBDDAD28D0A7BE0031DFE8 /* BankImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankImageView.swift; sourceTree = "<group>"; };
+		2AFBDDAF28D0AEFB0031DFE8 /* BankCircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCircleImageView.swift; sourceTree = "<group>"; };
+		2AFBDDB128D0C4B50031DFE8 /* AddMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoreView.swift; sourceTree = "<group>"; };
+		2AFBDDB428D0CAD80031DFE8 /* MainText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainText.swift; sourceTree = "<group>"; };
+		2AFBDDB628D0E2890031DFE8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +114,6 @@
 				2A421F3328883EC400579406 /* ItemMainButtonSheetView.swift */,
 				2ADB66E92887F65C005C8EC2 /* MainButtomSheetView.swift */,
 				2A7AAD69287D911C002E6867 /* CashListItem.swift */,
-				2A7AAD71287D911C002E6867 /* AddButtonView.swift */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -143,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				2A19704C28BE310B00DBD7F4 /* BankAccountView.swift */,
+				2AFBDDB128D0C4B50031DFE8 /* AddMoreView.swift */,
+				2AFBDDB628D0E2890031DFE8 /* CardView.swift */,
 			);
 			path = AddBankAccount;
 			sourceTree = "<group>";
@@ -203,6 +214,7 @@
 				2A7AAD70287D911C002E6867 /* ButtonViews */,
 				2A7AAD76287D911C002E6867 /* ImageView */,
 				2A7AAD6D287D911C002E6867 /* Model */,
+				2AFBDDB328D0CA9A0031DFE8 /* ViewModifiers */,
 				2A8B398F288ACAE500F84150 /* Extensions */,
 				2A7AAD8D287D925A002E6867 /* CoreData */,
 				2A7AAD6B287D911C002E6867 /* AppPreferences */,
@@ -234,6 +246,7 @@
 		2A7AAD70287D911C002E6867 /* ButtonViews */ = {
 			isa = PBXGroup;
 			children = (
+				2A7AAD71287D911C002E6867 /* AddButtonView.swift */,
 			);
 			path = ButtonViews;
 			sourceTree = "<group>";
@@ -245,6 +258,8 @@
 				2A7AAD78287D911C002E6867 /* CashImageView.swift */,
 				2A7AAD79287D911C002E6867 /* SavingsImageView.swift */,
 				2A7AAD7A287D911C002E6867 /* DebtsImageView.swift */,
+				2AFBDDAD28D0A7BE0031DFE8 /* BankImageView.swift */,
+				2AFBDDAF28D0AEFB0031DFE8 /* BankCircleImageView.swift */,
 			);
 			path = ImageView;
 			sourceTree = "<group>";
@@ -274,6 +289,14 @@
 				2A7AAD6C287D911C002E6867 /* ColorExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2AFBDDB328D0CA9A0031DFE8 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2AFBDDB428D0CAD80031DFE8 /* MainText.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,12 +381,16 @@
 				2A7AAD85287D911C002E6867 /* WalletView.swift in Sources */,
 				2A07AC7B288064AF00860C2C /* CurrencyEx.swift in Sources */,
 				2A88B4822892DE78007885E0 /* AppDelegate.swift in Sources */,
+				2AFBDDB728D0E2890031DFE8 /* CardView.swift in Sources */,
 				2A30A2AD2899235200F02F05 /* CreateMockClass.swift in Sources */,
 				2A88B4832892DE78007885E0 /* SceneDelegate.swift in Sources */,
 				2A945B27289403E600FF27F1 /* Holdy.xcdatamodeld in Sources */,
+				2AFBDDB028D0AEFB0031DFE8 /* BankCircleImageView.swift in Sources */,
+				2AFBDDAE28D0A7BE0031DFE8 /* BankImageView.swift in Sources */,
 				2A88B4872892F2D1007885E0 /* HoldyApp.swift in Sources */,
 				2ADB66F028881D17005C8EC2 /* Constants.swift in Sources */,
 				2A07AC7928802A5B00860C2C /* NetworkManager.swift in Sources */,
+				2AFBDDB228D0C4B50031DFE8 /* AddMoreView.swift in Sources */,
 				2A07AC81288066E700860C2C /* EditCashView.swift in Sources */,
 				2A3B843F2880BA7E00E81D2A /* DeleteButtonView.swift in Sources */,
 				2A7AAD80287D911C002E6867 /* CashModel.swift in Sources */,
@@ -377,6 +404,7 @@
 				2A7AAD7F287D911C002E6867 /* ColorExtension.swift in Sources */,
 				2A1420202892BE4200377BAF /* Cash+CoreDataProperties.swift in Sources */,
 				2A88B4852892E059007885E0 /* StorageManager.swift in Sources */,
+				2AFBDDB528D0CAD80031DFE8 /* MainText.swift in Sources */,
 				2A1420222892BE4200377BAF /* Money+CoreDataProperties.swift in Sources */,
 				2A421F3628883EEF00579406 /* ItemCurrencyButtomSheetView.swift in Sources */,
 				2A421F3828884A0400579406 /* AddCashView.swift in Sources */,
@@ -522,6 +550,7 @@
 				DEVELOPMENT_TEAM = MFAANN4LAU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Holdy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,6 +575,7 @@
 				DEVELOPMENT_TEAM = MFAANN4LAU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Holdy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

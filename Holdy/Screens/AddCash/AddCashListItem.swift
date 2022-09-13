@@ -58,7 +58,7 @@ struct AddCashListItem: View {
                         
                         Spacer()
                         
-                        TextField(isSaveNewValue ? "0.00" : "\(newCash)"  , text: $cashTextValue) { _ in
+                        TextField(isSaveNewValue ? "0.00" : "\(newCash)"  , text: $cashTextValue) { _ in 
                             checkValue()
                         }
                         .font(Font.headline.weight(isChoose ? .bold : .medium))

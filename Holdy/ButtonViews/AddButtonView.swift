@@ -9,6 +9,9 @@ import SwiftUI
 
 struct AddButtonView: View {
     
+    let lineWidth: Double
+    let circleD: Double
+    
     let action: () -> Void
     
     var body: some View {
@@ -17,13 +20,13 @@ struct AddButtonView: View {
             ZStack{
                 Circle()
                     .foregroundColor(.systemFill)
-                    .frame(width: 28, height: 28)
+                    .frame(width: circleD, height: circleD)
                 RoundedRectangle(cornerRadius: 1)
                     .foregroundColor(.white)
-                    .frame(width: 16, height: 2)
+                    .frame(width: lineWidth, height: 2)
                 RoundedRectangle(cornerRadius: 1)
                     .foregroundColor(.white)
-                    .frame(width: 16, height: 2)
+                    .frame(width: lineWidth, height: 2)
                     .rotationEffect(.degrees(90))
             }
         }
@@ -33,6 +36,6 @@ struct AddButtonView: View {
 
 struct AddButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        AddButtonView(action: {})
+        AddButtonView(lineWidth: 10, circleD: 16, action: {})
     }
 }

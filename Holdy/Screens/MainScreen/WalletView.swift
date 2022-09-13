@@ -57,7 +57,7 @@ struct WalletView: View {
                                 
                             Spacer()
                            
-                            AddButtonView(){
+                        AddButtonView(lineWidth: 16, circleD: 28){
                                //ACTION ADD
                             }
                         }

@@ -22,7 +22,13 @@ extension Color {
     static let appGrey = Color(red: 175 / 255, green: 176 / 255, blue: 182 / 255)
     static let appRed = Color(red: 255 / 255, green: 45 / 255, blue: 85 / 255)
     static let appBlue = Color(red: 10 / 255, green: 132 / 255, blue: 255 / 255)
-    static let appGreyBlue = Color(red: 57 / 255, green: 68 / 255, blue: 77 / 255)
+    static let appGreyDark = Color(red: 57 / 255, green: 68 / 255, blue: 77 / 255)
     
-
+   // static let appDarkGrey = colorRGB(57, 68, 77)
+    
+    //static let
+    
+//    func colorRGB(_ red: Double, _ green: Double, _ blue: Double) -> Color{
+//        return Color(red: red / 255, green: green / 255, blue: blue / 255)
+//    }
 }
